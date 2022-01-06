@@ -42,10 +42,38 @@ const topAuthor = (blogs) => {
     }
 }
 
+const mostLikes = (blogs) => {
+    const authors = new Map()
+    blogs.forEach(blog => {
+        const name = blog.author
+        const likes = blog.likes
+        if (authors.has(name)) {
+            const current = authors.get(name)
+            authors.set(name, current + likes)
+        } else {
+            authors.set(name, likes)
+        }
+    })
+    function highest(topAuthor, author) {
+        if (author[1] > topAuthor[1]) {
+            return author
+        } else {
+            return topAuthor
+        }
+    }
+    const authors_likes = Array.from(authors).map(([author, likes]) => ([author, likes]))
+    const [author, likes] = authors_likes.reduce(highest, authors_likes[0])
+    return {
+        author: author,
+        likes: likes
+    }
+}
+
 module.exports = {
     totalLikes,
     favourite,
-    topAuthor
+    topAuthor,
+    mostLikes
 }
 
 // const palindrome = (string) => {

@@ -92,6 +92,14 @@ describe('total likes', () => {
       }
     expect(result).toEqual(topAuthor)
   })
+  test('finding mostlikes author', () => {
+    const result = listHelper.mostLikes(blogs)
+    const mostlikesAuthor = {
+        author: "Edsger W. Dijkstra",
+        likes: 17
+    }
+    expect(result).toEqual(mostlikesAuthor)
+  })
 })
 
 // const average = require('../utils/for_testing').average
