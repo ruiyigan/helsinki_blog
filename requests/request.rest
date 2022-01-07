@@ -4,8 +4,8 @@ POST http://localhost:3003/api/blogs/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "title" : "Life",
-    "author" : "Kurt Gan",
-    "url" : "lame",
-    "likes" : 10
+    "title" : "Moby Dick",
+    "author" : "Hames Gan",
+    "url" : "haha",
+    "likes" : 93
 }
