@@ -4,8 +4,26 @@ POST http://localhost:3003/api/blogs/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "title" : "Moby Dick",
-    "author" : "Hames Gan",
+    "title" : "Shoe Dog",
+    "author" : "ISJHD Gan",
     "url" : "haha",
-    "likes" : 93
+    "likes" : 1000230,
+    "userId" : "61dd9072bfd343cad0a4f970"
 }
+
+###
+POST http://localhost:3003/api/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "jamesgan",
+    "name" : "Hames Gan",
+    "password" : "haha",
+    "blogs" : [{
+        "title": "lame fat",
+        "url": "www.google.com"
+    }]
+}
+
+###
+GET http://localhost:3003/api/users/
