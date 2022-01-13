@@ -2,10 +2,10 @@ GET http://localhost:3003/api/blogs/
 ###
 POST http://localhost:3003/api/blogs/ HTTP/1.1
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imt1cnRnYW4iLCJpZCI6IjYxZGVkYjc1MTRjZjhhYWQxYzdlZWY0ZiIsImlhdCI6MTY0MTk5NzM1NX0.wBvrdAhKYp3WyJsYBrJgzRVNAPyyRdZvg_DAYDex2zE
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imt1cnRnYW4iLCJpZCI6IjYxZGVkYjc1MTRjZjhhYWQxYzdlZWY0ZiIsImlhdCI6MTY0MjA4MzQ4MSwiZXhwIjoxNjQyMDg3MDgxfQ.bmrfBC9ZvBbA0JKND2v6a7im-yqR9iEHYlSJhRX4i_E
 
 {
-    "title" : "CAT Dog",
+    "title" : "FAT Dog",
     "author" : "ISJHD Gan",
     "url" : "haha",
     "likes" : 1000230,
@@ -17,9 +17,9 @@ POST http://localhost:3003/api/users/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "username" : "kurtgan",
+    "username" : "poooo",
     "name" : "Hames Gan",
-    "password" : "haha",
+    "password" : "haaa",
     "blogs" : []
 }
 
